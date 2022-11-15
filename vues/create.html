@@ -1,0 +1,63 @@
+<div>
+    <svg width="100%" height="100%"
+     viewBox="0 0 640 360" version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+        <image xlink:href="image/enfant.jpg" x="0" y="0" />
+        <text x="100" y="200" style="font-size: 25pt; text-decoration: underline; font-style: italic; font-weight: 900; fill: white;">Houra !!</text>
+    </svg>
+</div>
+<div>
+    <form action="">
+        <h2>Creator</h2>
+        <label for="meme_titre"><h4>titre</h4></label><br>
+        <input class="input-big-nud" type="text" name="titre" id="meme_titre">
+        <hr>
+        <label for="meme_image"><h4>image</h4></label><br>
+        <select class="input-big-nud" name="image" id="meme_image">
+            <option value="">Pas d'image</option>
+        </select>
+        <hr>
+        <label for="meme_text"><h4>texte</h4></label><br>
+        <input class="input-big-nud" type="text" name="text" id="meme_text">
+        <div class="flex-cols">
+            <div>
+                <label for="meme_x"><h4>X</h4></label><br>
+                <input class="input-small-nud" type="number" name="x" id="meme_x" >
+            </div>
+            <div>
+                <label for="meme_y"><h4>Y</h4></label><br>
+                <input class="input-small-nud" type="number" name="y" id="meme_y" >
+            </div>
+        </div>
+        <hr>
+        <h2>Decorations</h2>
+        <label for="meme_color"><h4>couleur</h4></label><br>
+        <input type="color" name="color" id="meme_color"><br>
+        <div class="flex-cols">
+            <div>
+                <label for="meme_fontsize"><h4>taille</h4></label><br>
+                <input class="input-small-nud" type="number" name="fontsize" id="meme_fontsize" min="1">
+            </div>
+            <div>
+                <label for="meme_fontweight"><h4>poids</h4></label><br>
+                <input class="input-small-nud" type="number" name="fontweight" id="meme_fontweight" min="100" max="900" step="100">
+            </div>
+        </div>
+        <div class="flex-cols">
+            <div>
+                <label for="meme_underline"><h4>soulignement</h4></label><br>
+                <input type="checkbox" name="underline" id="meme_underline" min="1">
+            </div>
+            <div>
+                <label for="meme_italic"><h4>italic</h4></label><br>
+                <input type="checkbox" name="italic" id="meme_italic">
+            </div>
+        </div>
+        <br>
+        <div class="flex-cols">
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>

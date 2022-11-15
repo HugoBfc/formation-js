@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formation JS</title>
+    
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/js/nav.js"></script>
+    <script src="/js/index.js"></script>
+    
 </head>
 <body>
-    <h1>HELLO WORLD</h1>
+    <div id="is-js-loaded">JS pas chargé</div>
+    <header>
+        Meme <span id="header_dot">.</span> <span id="header_js">js</span>
+    </header>
+    <nav>
+        <div class="navbar navbar-inverse">
+            <a id="home" class="navbar-brand" href="#">Home</a>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a id="thumbnail" href="#">Thumbnail</a>
+                </li>
+                <li>
+                    <a id="create" href="#">Create</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="wrapper">
+       <div class="thumbnail">
+            
+       </div>
+    </div>
+    <footer>&copy;right 2022 BFC prod</footer>
+
+    
 </body>
 </html>
